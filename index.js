@@ -30,3 +30,30 @@ addTaskButton.addEventListener("click", () => {
     inputAddTask.value = ""
     
 })
+
+
+const taskContainer = document.querySelector(".task-container")
+taskContainer.addEventListener("click", (event) => {
+  if (event.target.classList.contains("check-task-button")) {
+
+    const taskComponent = event.target.parentElement
+    const taskDescriptionParagraph = event.target.nextElementSibling
+    
+
+    if (taskComponent.classList.contains("task-checked")) {
+        taskDescriptionParagraph.style.color = "black"
+        taskDescriptionParagraph.style.textDecoration = "none"
+        event.target.innerText = ""
+
+        taskComponent.classList.remove("task-checked")
+        
+    } else {
+        taskDescriptionParagraph.style.color = "grey"
+        taskDescriptionParagraph.style.textDecoration = "line-through"
+        event.target.innerText = "✔️"
+
+        taskComponent.classList.add("task-checked")
+    }
+
+  }
+})
