@@ -5,8 +5,8 @@ Una aplicación web sencilla para gestionar tareas del día a día.
 ## 🚀 Características
 
 - Crear tareas con descripción.
-- Marcar tareas como completadas. -> proximamente
-- Eliminar tareas. -> proximamente
+- Marcar tareas como completadas. 
+- Eliminar tareas.
 - Editar tareas. -> proximamente
 
 ## ⚙️ Instalación

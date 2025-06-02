@@ -56,4 +56,12 @@ taskContainer.addEventListener("click", (event) => {
     }
 
   }
+
+  if (event.target.classList.contains("delete-task-button")) {
+
+    const taskComponent = event.target.parentElement
+
+    taskContainer.removeChild(taskComponent)
+
+  }
 })
