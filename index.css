@@ -63,3 +63,56 @@ body {
     background-color: #fff;
     font-size: 1rem;
 }
+
+.modify-task-button {
+    font-size: 1rem;
+    display: flex;
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.modify-task {
+    display: flex;
+    gap: 10px;
+}
+
+.input-modify-task {
+    display: flex;
+    background-color: black;
+    font-size: 1rem;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    overflow-y: scroll;
+}
+
+.input-modify-task::placeholder {
+    color: #fff;
+}
+
+.confirm-modify-task-button, .do-not-confirm-modify-task-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+
+@media (max-width: 390px) {
+
+    .modify-task {
+        gap: 5px;
+    }
+
+    .input-modify-task {
+        font-size: .8rem;
+    }
+}
+
+
